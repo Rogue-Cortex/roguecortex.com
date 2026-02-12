@@ -48,13 +48,29 @@
     }
     .back-link {
       display: inline-block;
-      margin-top: 30px;
       padding: 10px 14px;
       border: 1px solid #c8c8c8;
       border-radius: 10px;
       text-decoration: none;
       background: #f8f8f8;
       font-weight: 600;
+    }
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 30px;
+    }
+    .apply-link {
+      display: inline-block;
+      padding: 10px 14px;
+      border: 1px solid #2c8b4b;
+      border-radius: 10px;
+      text-decoration: none;
+      background: #35a85a;
+      color: #ffffff;
+      font-weight: 700;
     }
     footer {
       position: fixed;
@@ -104,7 +120,10 @@
       <li>Project portfolio of relevant parts/assemblies</li>
     </ul>
 
-    <a class="back-link" href="../jobs.html">Back to Jobs</a>
+    <div class="actions">
+      <a class="back-link" href="../jobs.html">Back to Jobs</a>
+      <a class="apply-link" href="mailto:join@roguecortex.com?subject=Junior%20Electrical%20Engineer%2C%20Power%20Systems">Apply</a>
+    </div>
   </main>
   <footer>
     © 2026 Rogue Cortex Ltd. All rights reserved.
