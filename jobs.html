@@ -2,52 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>🥷</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobs | Rogue Cortex</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     html, body {
       margin: 0;
       width: 100%;
-      height: 100%;
+      min-height: 100%;
     }
     body {
       display: flex;
       flex-direction: column;
-      background-color: #eeeeee; /* soft grey */
+      background: #eeeeee;
       color: #222222;
       font-family: "Manrope", "Segoe UI", "Helvetica Neue", sans-serif;
     }
     main {
       flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px 24px 88px;
+      width: min(820px, 92vw);
+      margin: 0 auto;
+      padding: 48px 0 88px;
     }
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
+    h1 {
+      margin: 0 0 20px;
+      font-size: 2rem;
     }
-    .emoji {
-      font-size: 4rem;
+    .jobs-list {
+      margin: 0;
+      padding-left: 20px;
+      font-size: 1.05rem;
+      line-height: 1.7;
     }
-    .jobs-button {
+    a {
+      color: #222222;
+    }
+    .home-link {
       display: inline-block;
-      padding: 10px 16px;
+      margin-top: 24px;
+      padding: 10px 14px;
       border: 1px solid #c8c8c8;
       border-radius: 10px;
       text-decoration: none;
-      color: #222222;
       background: #f8f8f8;
-      font-size: 1rem;
       font-weight: 600;
-    }
-    .jobs-button:hover {
-      background: #ffffff;
     }
     footer {
       position: fixed;
@@ -61,17 +61,16 @@
       border-top: 1px solid #d5d5d5;
       background: #e6e6e6;
     }
-    footer a {
-      color: inherit;
-    }
   </style>
 </head>
 <body>
   <main>
-    <div class="hero">
-      <div class="emoji">🤖🏴‍☠️🧠</div>
-      <a class="jobs-button" href="jobs.html">Join us</a>
-    </div>
+    <h1>Open Roles</h1>
+    <ul class="jobs-list">
+      <li><a href="jobs/junior_swe_embedded.html">Junior Software Engineer, Embedded Robotics</a></li>
+      <li><a href="jobs/junior_ee_power.html">Junior Electrical Engineer, Power Systems</a></li>
+    </ul>
+    <a class="home-link" href="index.html">Back to Home</a>
   </main>
   <footer>
     © 2026 Rogue Cortex Ltd. All rights reserved.
